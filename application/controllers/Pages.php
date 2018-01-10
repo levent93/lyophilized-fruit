@@ -18,8 +18,8 @@ class Pages extends MY_Controller {
 	}
 
     public function index(){
-    	
-          echo 'Hello World!';
+    	echo "hello world";
     }
+
 
 }

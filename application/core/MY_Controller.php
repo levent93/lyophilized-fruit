@@ -19,6 +19,11 @@ class MY_Controller extends CI_Controller {
 
 	public function page($page_name, $data = array()) {
 		
+		$data['session'] = $this->session->all_userdata();
+
+		 $this->load->view('templates\header', $data);
+         $this->load->view($page_name, $data);
+         $this->load->view('templates\footer', $data);
 	}
 
 }
